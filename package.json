@@ -42,6 +42,7 @@
     "helmet": "^3.12.1",
     "http-status": "^1.2.0",
     "joi": "^13.4.0",
-    "ramda": "^0.25.0"
+    "ramda": "^0.25.0",
+    "watson-developer-cloud": "^3.5.0"
   }
 }
