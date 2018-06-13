@@ -1,0 +1,24 @@
+{
+  "name": "watson-assistant-training-api",
+  "version": "1.0.0",
+  "description": "IBM Watson Assistant Training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icarotav/watson-assistant-training-api.git"
+  },
+  "keywords": [
+    "ibm",
+    "watson",
+    "assistant"
+  ],
+  "author": "Icaro Tavares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icarotav/watson-assistant-training-api/issues"
+  },
+  "homepage": "https://github.com/icarotav/watson-assistant-training-api#readme"
+}
