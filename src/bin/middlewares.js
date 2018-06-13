@@ -1,4 +1,3 @@
-const logger = require('morgan')
 const bodyParser = require('body-parser')
 const helmet = require('helmet')
 const cors = require('cors')
@@ -11,10 +10,6 @@ const configureExpress = () => {
   const app = express()
 
   app.set('port', process.env.PORT || '3000')
-
-  if (app.get('env') === 'development') {
-    app.use(logger('dev'))
-  }
 
   app.use(helmet())
   app.use(helmet.noCache())

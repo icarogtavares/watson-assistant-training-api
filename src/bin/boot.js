@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const { configureExpress } = require('./middlewares')
 const debug = require('debug')
 
