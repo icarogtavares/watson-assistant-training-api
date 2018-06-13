@@ -26,5 +26,5 @@ const updateMessage = (input, response) => {
 }
 
 module.exports = {
-    updateMessage
+    updateMessage,
 }

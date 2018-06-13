@@ -26,3 +26,8 @@ const message = (req, res, next) => {
         return res.json(updateMessage(payload, data))
     });
 }
+
+module.exports = {
+    message,
+
+}

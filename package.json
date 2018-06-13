@@ -5,10 +5,10 @@
     "node": "8.11.3"
   },
   "description": "IBM Watson Assistant Training",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node ./src/server.js",
-    "dev": "NODE_ENV=development DEBUG=watson-api:* nodemon ./src/server.js",
+    "start": "node ./src/index.js",
+    "dev": "NODE_ENV=development DEBUG=watson-api:* nodemon ./src/index.js",
     "lint": "eslint src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
