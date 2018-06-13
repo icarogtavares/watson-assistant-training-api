@@ -27,7 +27,7 @@ const configureExpress = () => {
     next()
   })
 
-  app.use('/', routes)
+  app.use('/api', routes)
 
   app.use((req, res, next) => {
     const err = new Error('Not Found')
