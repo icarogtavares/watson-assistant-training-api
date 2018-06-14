@@ -4,7 +4,7 @@ const { updateMessage } = require('../services/watson.assistant')
 const config = getConfig()
 
 const message = (req, res, next) => {
-    var workspace = config.WORKSPACE_ID
+    var workspace = config.workspace_id
     if (!workspace || workspace === '<workspace-id>') {
       return res.json({
         'output': {
@@ -29,5 +29,4 @@ const message = (req, res, next) => {
 
 module.exports = {
     message,
-
 }
