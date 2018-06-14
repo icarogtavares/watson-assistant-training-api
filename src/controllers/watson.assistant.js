@@ -1,13 +1,9 @@
-const getConfig = require('../config/watson.assistant')
-const assistant = require('../bin/watson.assistant')
+const { assistant, workspaceId } = require('../bin/watson.assistant')
 const { updateMessage } = require('../services/watson.assistant')
 
-const config = getConfig()
-
 const message = (req, res) => {
-  const workspace = config.workspace_id
   const payload = {
-    workspace_id: workspace,
+    workspaceId,
     context: req.body.context || {},
     input: req.body.input || {},
   }

@@ -1,5 +1,5 @@
 const watson = require('watson-developer-cloud')
-const getConfig = require('../config/watson.assistant')
+const getConfig = require('../config/watson/assistant.config')
 
 const config = getConfig()
 
@@ -9,4 +9,7 @@ const assistant = new watson.AssistantV1({
   version: '2018-06-13',
 })
 
-module.exports = assistant
+module.exports = {
+  assistant,
+  workspaceId: config.workspaceId,
+}
