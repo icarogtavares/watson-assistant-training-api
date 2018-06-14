@@ -10,6 +10,7 @@
     "start": "node ./src/index.js",
     "dev": "NODE_ENV=development DEBUG=watson-api:* nodemon ./src/index.js",
     "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

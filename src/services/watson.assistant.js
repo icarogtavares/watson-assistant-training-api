@@ -5,26 +5,26 @@
  * @return {Object}          The response with the updated message
  */
 const updateMessage = (input, response) => {
-    var responseText = null;
-    if (!response.output) {
-        response.output = {};
+  let responseText = null
+  if (!response.output) {
+    response.output = {}
+  } else {
+    return response
+  }
+  if (response.intents && response.intents[0]) {
+    const intent = response.intents[0]
+    if (intent.confidence >= 0.75) {
+      responseText = `I understood your intent was ${intent.intent}`
+    } else if (intent.confidence >= 0.5) {
+      responseText = `I think your intent was ${intent.intent}`
     } else {
-        return response;
+      responseText = 'I did not understand your intent'
     }
-    if (response.intents && response.intents[0]) {
-        var intent = response.intents[0];
-        if (intent.confidence >= 0.75) {
-        responseText = 'I understood your intent was ' + intent.intent;
-        } else if (intent.confidence >= 0.5) {
-        responseText = 'I think your intent was ' + intent.intent;
-        } else {
-        responseText = 'I did not understand your intent';
-        }
-    }
-    response.output.text = responseText;
-    return response;
+  }
+  response.output.text = responseText
+  return response
 }
 
 module.exports = {
-    updateMessage,
+  updateMessage,
 }
