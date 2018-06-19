@@ -1,3 +1,3 @@
 const { startApp } = require('./bin/boot')
 
-startApp(0);
+startApp(0)

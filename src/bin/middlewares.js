@@ -30,7 +30,7 @@ const configureExpress = () => {
     next(err)
   })
 
-  app.use((err, req, res, next) => {
+  app.use((err, req, res, next) => { // eslint-disable-line max-params, no-unused-vars
     res.locals.message = err.message
     res.locals.error = req.app.get('env') === 'development' ? err : {}
     res.status(err.status || 500)

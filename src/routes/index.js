@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.use('/message', assistantRoutes)
 
-router.get('/', (req, res, next) => {
+router.get('/', (req, res, next) => { // eslint-disable-line no-unused-vars
   res.send({ index: 'index route' })
 })
 
